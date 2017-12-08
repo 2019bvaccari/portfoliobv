@@ -1,0 +1,42 @@
+<%= form_with(model: layout, local: true) do |form| %>
+  <% if layout.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(layout.errors.count, "error") %> prohibited this layout from being saved:</h2>
+
+      <ul>
+      <% layout.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, id: :layout_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :subtitle %>
+    <%= form.text_field :subtitle, id: :layout_subtitle %>
+  </div>
+
+  <div class="field">
+    <%= form.label :text %>
+    <%= form.text_field :text, id: :layout_text %>
+  </div>
+
+  <div class="field">
+    <%= form.label :body %>
+    <%= form.text_area :body, id: :layout_body %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.text_area :image, id: :layout_image %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
