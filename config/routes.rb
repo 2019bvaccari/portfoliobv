@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
   root 'pages#home'
 
-  get 'Academic Interest', to: 'pages#academic_interest'
+  get 'academic_interest', to: 'pages#academic_interest'
 
-  get 'Personal Interest', to: 'pages#personal_interest'
+  get 'personal_interest', to: 'pages#personal_interest'
 
-  get 'About Me', to: 'pages#about_me'
+  get 'about_me', to: 'pages#about_me'
 
   resources :layouts
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
