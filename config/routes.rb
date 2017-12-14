@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
+  
   root 'pages#home'
+
+  get 'ask', to: 'map#ask'
+
+  get 'show', to: 'map#show'
 
   get 'academic_interest', to: 'pages#academic_interest'
 
