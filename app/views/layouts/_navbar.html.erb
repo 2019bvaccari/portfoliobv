@@ -1,26 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    display: inline;
-}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<ul>
-  <li><%= link_to 'Academic Interest', academic_interest_path %></li>
-  <li><%= link_to 'Personal Interest', personal_interest_path %></li>
-  <li><%= link_to 'About Me', about_me_path %></li>
-  <li><%= link_to 'Google Maps API', ask_path %></li>
-</ul>
-
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Braden Vaccari</a>
+    </div>
+      <li class="active"><%= link_to 'Home', home_path %></li>
+      <li><%= link_to 'Academic Interest', academic_interest_path %></li>
+ 	  <li><%= link_to 'Personal Interest', personal_interest_path %></li>
+	  <li><%= link_to 'About Me', about_me_path %></li>
+</nav>
 </body>
 </html>

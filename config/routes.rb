@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   get 'about_me', to: 'pages#about_me'
 
+  get 'home', to: 'pages#home'
+
   resources :layouts
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
